@@ -86,6 +86,7 @@ function specialDeal()
 	 */
 function stopBubble(event)
 {
+	//prevent the bubble
 	var e = event || window.event;
 	if(e.stopPropagation) { 
         e.stopPropagation();
