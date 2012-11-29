@@ -86,11 +86,10 @@ function specialDeal()
 	 */
 function stopBubble(event)
 {
-	//阻止事件冒泡
 	var e = event || window.event;
-	if(e.stopPropagation) { //W3C阻止冒泡方法
+	if(e.stopPropagation) { 
         e.stopPropagation();
     } else {
-        e.cancelBubble = true; //IE阻止冒泡方法
+        e.cancelBubble = true; 
     }
 }
